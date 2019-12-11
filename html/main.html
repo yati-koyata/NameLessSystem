@@ -2,19 +2,136 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../css/main_style.css">
-        <title>システム名 | ルーム名</title>
+        <title>無名機構書 | ルーム名</title>
     </head>
     <body>
-        <ul class="menu">
-            <li class="file"><a href="../images/file.png"></a></li>
-            <li>表示</li>
-            <li>コマ</li>
-            <li>マップ</li>
-            <li>画像</li>
-            <li>ヘルプ</li>
-            <li>(GM)</li>
-            <li class="right">ログアウト</li>
-        </ul>
-    </body>
+        <div class="container">
+            <ul class="gnav">
+                <li>
+                    <a href="">ファイル</a>
+                    <ul>
+                        <li><a href="">セーブ</a></li>
+                        <li><a href="">ロード</a></li>
+                        <li><a href="">全データセーブ</a></li>
+                        <li><a href="">全データロード</a></li>
+                        <li><a href="">チャットログ保存</a></li>
+                        <li><a href="">ログアウト</a></li>
+                    </ul>
+                </li>
 
+                <li><a href="">表示</a>
+                  <ul>
+                    <li><a href="">ウィンドウ</a>
+                        <ul>
+                            <li><a href="">チャット表示</a></li>
+                            <li><a href="">ダイス表示</a></li>
+                            <li><a href="">イニシアティブ表示</a></li>
+                            <li><a href="">リソース表示</a></li>
+                            <li><a href="">チャットパレット表示</a></li>
+                            <li><a href="">カウンタリモコン表示</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">立ち絵表示</a></li>
+                    <li><a href="">カットイン表示</a></li>
+                    <li><a href="">立ち絵のサイズを自動調整する</a></li>
+                    <li><a href="">フォントサイズ変更</a></li>
+                    <li><a href="">ウィンドウ配置初期化</a></li>
+                    <li><a href="">表示状態初期化</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="">コマ</a>
+                    <ul>
+                      <li><a href="">キャラクター追加</a></li>
+                      <li><a href="">チット作成</a></li>
+                      <li><a href="">墓場</a></li>
+                      <li><a href="">キャラクター待合室</a></li>
+                      <li><a href="">回転マーカーを表示する</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">マップ</a>
+                  <ul>
+                    <li><a href="">マップ変更</a></li>
+                    <li><a href="">フロアタイル変更モード</a></li>
+                    <li><a href="">マップマスク追加</a></li>
+                    <li><a href="">簡易マップ作成</a></li>
+                    <li><a href="">マップ状態保存</a></li>
+                    <li><a href="">マップ変更</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="">画像</a>
+                  <ul>
+                    <li><a href="">ファイルアップローダー</a></li>
+                    <li><a href="">タグ編集</a></li>
+                    <li><a href="">画像削除</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="">ヘルプ</a>
+                  <ul>
+                    <li><a href="">バージョン</a></li>
+                    <li><a href="">マニュアル</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                    <a href="">(GM用)</a>
+                    <ul>
+                        <li><a href="">Child1</a></li>
+                        <li><a href="">Child2</a></li>
+                        <li><a href="">Child3</a></li>
+                        <li><a href="">Child4</a></li>
+                        <li><a href="">Child5</a></li>
+                    </ul>
+                </li>
+
+                <li class="room"><a href="">ルームナンバー</a></li>
+
+                <li class="logout"><a href="">ログアウト</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <!--メインの範囲だよ～～マップ表示したりいろいろするよ～～-->
+        </div>
+
+        <div class="chat">
+            <div class="tabs">
+                <input id="all" type="radio" name="tab_item" checked>
+                <label class="tab_item" for="all">メイン</label>
+                <input id="programming" type="radio" name="tab_item">
+                <label class="tab_item" for="programming">メモ</label>
+                <input id="design" type="radio" name="tab_item">
+                <label class="tab_item" for="design">雑談</label>
+                <input id="design" type="radio" name="tab_item">
+                <label class="tab_item" for="secret">秘匿</label>
+
+                <div class="tab_content" id="all_content">
+                  <div class="tab_content_description">
+                    <p class="c-txtsp">
+                      メインチャット
+                    </p>
+                  </div>
+                </div>
+                <div class="tab_content" id="programming_content">
+                  <div class="tab_content_description">
+                    <p class="c-txtsp">メモチャット</p>
+                  </div>
+                </div>
+                <div class="tab_content" id="design_content">
+                  <div class="tab_content_description">
+                    <p class="c-txtsp">雑談チャット</p>
+                  </div>
+                </div>
+                <div class="tab_content" id="design_content">
+                  <div class="tab_content_description">
+                    <p class="c-txtsp">秘匿チャット</p>
+                  </div>
+                </div>
+
+              </div>
+        </div>
+    </body>
 </html>
