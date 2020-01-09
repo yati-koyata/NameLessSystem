@@ -1,1 +1,0 @@
-// totemo sugoi javascript desu.
