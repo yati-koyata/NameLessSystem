@@ -149,7 +149,7 @@ body{
 
 /*タブ切り替え全体のスタイル*/
 .chat{
-    bottom: 0;          /* 下に固定 */
+    bottom: 70px;         /* 入力欄の上に固定 */
     position: absolute; /* 絶対位置 */
     width: 100%;
 }
@@ -159,9 +159,11 @@ body{
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     /*width: 1500px;*/
-    margin: 0 auto;}  
-  /*各タブのスタイル*/
-  .tab_item {
+    margin: 0 auto;
+}  
+
+/*各タブのスタイル*/
+.tab_item {
     width: calc(100%/4);
     height: 40px;
     border-bottom: 3px solid #44546A;
@@ -175,36 +177,54 @@ body{
     text-align: center;
     font-weight: bold;
     transition: all 0.2s ease;
-  }
-  .tab_item:hover {
+}
+.tab_item:hover {
     opacity: 0.75;
-  }
+}
   
-  /*ラジオボタンを全て消す*/
-  input[name="tab_item"] {
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
     display: none;
-  }
+}
   
-  /*タブ切り替えの中身のスタイル*/
-  .tab_content {
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
     display: none;
     padding: 15px 15px 0;
     clear: both;
     overflow: hidden;
     height: 100px;
-  }
+}
   
-  
-  /*選択されているタブのコンテンツのみを表示*/
-  #all:checked ~ #all_content,
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
   #programming:checked ~ #programming_content,
   #design:checked ~ #design_content,
   #secret:checked ~ #secret_content {
     display: block;
-  }
+}
   
-  /*選択されているタブのスタイルを変える*/
-  .tabs input:checked + .tab_item {
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
     background-color: #44546A;
     color: #fff;
-  }
+}
+
+/* 入力欄のスタイル */
+.input_field{
+    bottom: 0;  /*一番下に固定*/
+    position: absolute;
+    width: 1300px;
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgb(236, 236, 236);
+}
+
+/* 送信ボタンのスタイル */
+.submit{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #3b546b;
+}
