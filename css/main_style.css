@@ -212,9 +212,14 @@ input[name="tab_item"] {
 
 /* 名前入力欄のスタイル */
 .name_field{
-    bottom: 20;
-    left: 10;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 70px;
+    padding-top: 25px;
+    padding-left: 10px;
     position: absolute;
+    /*background-color: #44546A;*/
     background-color: rgb(236, 236, 236);
 }
 
@@ -227,6 +232,7 @@ input[name="tab_item"] {
     height: 70px;
     padding-top: 15px;
     padding-left: 15px;
+    /*background-color: #44546A;*/
     background-color: rgb(236, 236, 236);
 }
 
@@ -235,9 +241,11 @@ input[name="tab_item"] {
     bottom: 15;
     right: 70;
     position: absolute;
+    /*background-color: #44546A;*/
     background-color: rgb(236, 236, 236);
 }
 
+/* テキストエリアを拡大縮小させない */
 textarea{
     resize: none;
 }
