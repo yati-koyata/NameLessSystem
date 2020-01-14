@@ -210,11 +210,20 @@ input[name="tab_item"] {
     color: #fff;
 }
 
+/* 名前入力欄のスタイル */
+.name_field{
+    bottom: 20;
+    left: 10;
+    position: absolute;
+    background-color: rgb(236, 236, 236);
+}
+
 /* 入力欄のスタイル */
 .input_field{
     bottom: 0;  /*一番下に固定*/
+    left: 150;
     position: absolute;
-    width: 1300px;
+    width: 1385px;
     height: 70px;
     padding-top: 15px;
     padding-left: 15px;
@@ -223,8 +232,12 @@ input[name="tab_item"] {
 
 /* 送信ボタンのスタイル */
 .submit{
-    bottom: 0;
-    right: 0;
+    bottom: 15;
+    right: 70;
     position: absolute;
-    background-color: #3b546b;
+    background-color: rgb(236, 236, 236);
+}
+
+textarea{
+    resize: none;
 }
