@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>JsFrame.js JavaScript Yosemite</title>
-    <meta charset="utf-8">
-</head>
-<body style="background: url('http://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg') 50% no-repeat fixed; background-size: cover;">
-<script src="https://riversun.github.io/jsframe/jsframe.js"></script>
-
-<script>
-        const jsFrame = new JSFrame();//jsFrameオブジェクトを作る
+const jsFrame = new JSFrame();//jsFrameオブジェクトを作る
         const frames = [];
         for (let i = 0; i < 3; i++) {
             const frame = jsFrame.create({
@@ -41,6 +31,3 @@
             frames.push(frame);
         }
         frames[0].requestFocus();
-</script>
-</body>
-</html>
